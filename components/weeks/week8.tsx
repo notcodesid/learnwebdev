@@ -14,7 +14,7 @@ export default function Week8() {
     return (
       <div className="w-full max-w-3xl mx-auto p-5">
         <div className="space-y-1 mb-4">
-          <div className="text-lg font-medium text-orange-500">Week 8 • - Lectures</div>
+          <div className="text-lg font-medium text-orange-500">Week 8 • 6 Lectures</div>
           <h2 className="text-2xl font-bold">Express with Node.js And API</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
