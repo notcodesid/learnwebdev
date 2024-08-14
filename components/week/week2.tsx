@@ -20,7 +20,7 @@ export default function Week2() {
     return (
       <div className="w-full max-w-3xl mx-auto p-5">
         <div className="space-y-1 mb-4">
-          <div className="text-lg font-medium text-orange-500">Week 2-3 • 9 Lectures</div>
+          <div className="text-lg font-medium text-orange-500">Week 2 • 9 Lectures</div>
           <h2 className="text-2xl font-bold">CSS</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
