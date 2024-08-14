@@ -25,7 +25,7 @@ export default function Week11() {
     return (
       <div className="w-full max-w-3xl mx-auto p-5">
         <div className="space-y-1 mb-4">
-          <div className="text-lg font-medium text-orange-500">Week 11 • 9 Lectures</div>
+          <div className="text-lg font-medium text-orange-500">Week 11 • 14 Projects</div>
           <h2 className="text-2xl font-bold">Projects</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
