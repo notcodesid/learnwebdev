@@ -18,7 +18,7 @@ export default function HeroSection() {
                 </div>
                 <div>
                     <p>
-                        First earn ₹30K per month and pay your bills. Don't worry. Industry sell a lot of expensive stuff too, you can
+                        First earn ₹30K per month and pay your bills. Don&apos;t worry. Industry sell a lot of expensive stuff too, you can
                         buy them once you have the basic knowledge.
                     </p>
                 </div>
