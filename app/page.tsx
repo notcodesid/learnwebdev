@@ -9,6 +9,7 @@ import Week6 from "@/components/weeks/week6";
 import Week7 from "@/components/weeks/week7";
 import Week8 from "@/components/weeks/week8";
 import Week9 from "@/components/weeks/week9";
+import Week10 from "@/components/weeks/week10";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
     <Week7 />
     <Week8 />
     <Week9 />
+    <Week10 />
   
     </>
 
