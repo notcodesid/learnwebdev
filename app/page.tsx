@@ -11,6 +11,7 @@ import Week8 from "@/components/weeks/week8";
 import Week9 from "@/components/weeks/week9";
 import Week10 from "@/components/weeks/week10";
 import Week11 from "@/components/weeks/week11";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
     <Week9 />
     <Week10 />
     <Week11 />
+    <Footer />
   
     </>
 

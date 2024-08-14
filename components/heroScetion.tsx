@@ -3,7 +3,7 @@
 export default function HeroSection() {
     return (
         <div className="max-w-3xl mx-auto px-4 md:pt-12">
-            <p className="text-center text-orange-500 font-semibold mb-4">100% Free • 12-Week Bootcamp</p>
+            <p className="text-center text-orange-500 font-semibold mb-4">100% Free • 11-Week Bootcamp</p>
             <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">
                 Zero to Full-Stack Hero:
                 Web Dev Mastery Course<br />for Beginners

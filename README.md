@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Zero to Full-Stack Hero: Web Dev Mastery Course for Beginners
 
-## Getting Started
+## About the Course
 
-First, run the development server:
+This is a 100% free, 11-week boot camp designed to transform your career in web development. No prior experience or CS degree is required.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Key Features:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Duration**: 11 weeks
+- **Cost**: Completely free
+- **Target Audience**: Beginners with no prior coding experience
+- **Goal**: Achieve full-stack web development proficiency
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Why It's Free
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+We believe in making basic web development education accessible to everyone. Our philosophy is that it doesn't make sense to charge for courses teaching fundamental skills.
 
-## Learn More
+## Course Objectives
 
-To learn more about Next.js, take a look at the following resources:
+By the end of this boot camp, you should:
+1. Gain a solid foundation in web development
+2. Develop skills to potentially earn ₹30K per month in the industry
+3. Be prepared for more advanced, specialized courses if desired
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## What to Expect
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Comprehensive curriculum covering front-end and back-end technologies
+- Hands-on projects and exercises
+- Industry-relevant skills and best practices
 
-## Deploy on Vercel
+## Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- No coding experience required
+- No computer science degree is needed
+- Just bring your enthusiasm and willingness to learn!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Next Steps
+
+Ready to start your journey to becoming a full-stack web developer? Enroll now and take the first step toward a new tech career!
+
+---
+
+Remember: This course provides the basics for free. Once you have this foundation, you'll be better equipped to invest in more advanced, specialized courses if you choose to further your skills.
