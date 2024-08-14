@@ -1,7 +1,7 @@
 import Appbar from "@/components/appbar";
 import HeroSection from "@/components/heroScetion";
-import Week1 from "@/components/week1";
-import Image from "next/image";
+import Week1 from "@/components/week/week1";
+import Week2 from "@/components/week/week2";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
     <Appbar />
     <HeroSection />
     <Week1 />
+    <Week2 />
     </>
 
   );
