@@ -1,28 +1,25 @@
-export default function Week6() {
-    const git = [
-      { text: "Introduction to GIT", url: "https://www.youtube.com/watch?v=7tOLcNZfPso&list=PLRAV69dS1uWT4v4iK1h6qejyhGObFH9_o" },
-      { text: "Master Git Init", url: "https://www.youtube.com/watch?v=l_V7sNrpd3A&list=PLRAV69dS1uWT4v4iK1h6qejyhGObFH9_o&index=2" },
-      { text: "Git commits and logs", url: "https://www.youtube.com/watch?v=wVGiJKSnJY0&list=PLRAV69dS1uWT4v4iK1h6qejyhGObFH9_o&index=3" },
-      { text: "Git internal working and configs", url: "https://www.youtube.com/watch?v=owQtvW112tI&list=PLRAV69dS1uWT4v4iK1h6qejyhGObFH9_o&index=4" },
-      { text: "Git merge and git conflicts", url: "https://www.youtube.com/watch?v=vw-2U0u7Ni4&list=PLRAV69dS1uWT4v4iK1h6qejyhGObFH9_o&index=5" },
-      { text: "Git Diff and stashing", url: "https://www.youtube.com/watch?v=EYdIMAVFIk0&list=PLRAV69dS1uWT4v4iK1h6qejyhGObFH9_o&index=6" },
+export default function Week7() {
+    const introBackend = [
+      { text: "Overview", url: "https://www.youtube.com/watch?v=XBu54nfzxAQ" },
+      { text: "Backend Tools and Technologies", url: "https://www.youtube.com/watch?v=tN6oJu2DqCM" },
     ];
   
-    const github = [
-      { text: "Github in one shot", url: "https://www.youtube.com/watch?v=TsSjgkfAeJ0" },
+    const roadmapSteps = [
+      { text: "Node.js", url: "https://www.youtube.com/watch?v=TlB_eWDSMt4" },
+      { text: "Express", url: "https://www.youtube.com/watch?v=SccSCuHhOw0" },
     ];
   
     return (
       <div className="w-full max-w-3xl mx-auto p-5">
         <div className="space-y-1 mb-4">
-          <div className="text-lg font-medium text-orange-500">Week 6 • 7 Lectures</div>
-          <h2 className="text-2xl font-bold">Git and Github</h2>
+          <div className="text-lg font-medium text-orange-500">Week 7 • 4 Lectures</div>
+          <h2 className="text-2xl font-bold">Backend Development</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <h3 className="font-semibold mb-2">Git</h3>
+            <h3 className="font-semibold mb-2">Introduction</h3>
             <ul className="space-y-1">
-              {git.map((step, index) => (
+              {introBackend.map((step, index) => (
                 <li key={index}>
                   <a 
                     href={step.url}
@@ -36,9 +33,9 @@ export default function Week6() {
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold mb-2"> Github</h3>
+            <h3 className="font-semibold mb-2">Technology</h3>
             <ul className="space-y-1">
-              {github.map((step, index) => (
+              {roadmapSteps.map((step, index) => (
                 <li key={index}>
                   <a 
                     href={step.url}
