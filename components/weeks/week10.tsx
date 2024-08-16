@@ -1,7 +1,7 @@
 export default function Week10() {
     const basicReact = [
       { text: "Components", url: "https://www.youtube.com/watch?v=VSSm2nebwak&list=PLinedj3B30sBm5wu3ixPRQ0gDqHJUlxQf&index=4" },
-      { text: "Rendering", url: "https://www.youtube.com/watch?v=DSRMCZwM3YE" },
+      { text: "Rendering", url: "https://www.youtube.com/watch?v=mECV6nGOqNo" },
       { text: "Props", url: "https://www.youtube.com/watch?v=VpGFuThTjhY&list=PLinedj3B30sBm5wu3ixPRQ0gDqHJUlxQf&index=5" },
       { text: "Hooks", url: "https://www.youtube.com/watch?v=4Cf86qVEIJY" },
       { text: "Routers", url: "https://www.youtube.com/watch?v=VJov5QWEKE4" },
