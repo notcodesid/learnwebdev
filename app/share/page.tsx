@@ -75,6 +75,8 @@ export default function Component() {
                 <SelectItem value="css">CSS</SelectItem>
                 <SelectItem value="javascript">JavaScript</SelectItem>
                 <SelectItem value="react">React</SelectItem>
+                <SelectItem value="nodeJS">Node JS</SelectItem>
+                <SelectItem value="database">Database</SelectItem>
                 <SelectItem value="other">Other</SelectItem>
               </SelectContent>
             </Select>
