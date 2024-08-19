@@ -1,6 +1,6 @@
 # Zero to Full-Stack Hero: Web Dev Mastery Course for Beginners
 
-![Course Banner](./public/image.png)
+[Course Banner](./public/image.png)
 
 ## Overview
 
