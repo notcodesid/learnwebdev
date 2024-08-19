@@ -30,7 +30,6 @@ export default function Home() {
     <Week10 />
     <Week11 />
     <Footer />
-  
     </>
 
   );

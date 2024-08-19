@@ -4,7 +4,10 @@ import Link from "next/link"
 
 export default function Appbar() {
     return (
-        <header className="sticky flex h-16 items-center justify-end border-b px-4 lg:px-6">
+        <header className="sticky top-0 bg-white flex h-16 items-center justify-end border-b px-4 lg:px-6">
+            <Link href="/share">
+            <p className="mr-10">Share resources</p>
+            </Link>
             <div className="flex items-center gap-4">
                 <span className="text-sm text-muted-foreground">
                     Curated with love by
