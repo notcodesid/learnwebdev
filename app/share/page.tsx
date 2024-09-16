@@ -5,20 +5,35 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import axios from 'axios'
+
+interface ResourcesProps {
+  title: string;
+  description: string;
+  url: string;
+  category: string;
+}
 
 export default function Component() {
-  const [title, setTitle] = useState('')
-  const [description, setDescription] = useState('')
-  const [url, setUrl] = useState('')
-  const [category, setCategory] = useState('')
+  const [formData, setFormData] = useState({
+    title: '',
+    description: '',
+    url: '',
+    category: ''
+  })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log({ title, description, url, category })
-    setTitle('')
-    setDescription('')
-    setUrl('')
-    setCategory('')
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(formData)
+    // Submit the form data to your API or database
   }
 
   return (
@@ -37,9 +52,10 @@ export default function Component() {
             <Label htmlFor="title">Resource Title</Label>
             <Input
               id="title"
+              name="title"
               placeholder="Enter the resource title"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
+              value={formData.title}
+              onChange={handleChange}
               required
             />
           </div>
@@ -47,9 +63,10 @@ export default function Component() {
             <Label htmlFor="description">Description</Label>
             <Textarea
               id="description"
+              name="description"
               placeholder="Briefly describe the resource"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
+              value={formData.description}
+              onChange={handleChange}
               required
             />
           </div>
@@ -57,16 +74,17 @@ export default function Component() {
             <Label htmlFor="url">Resource URL</Label>
             <Input
               id="url"
+              name="url"
               type="url"
               placeholder="https://example.com"
-              value={url}
-              onChange={(e) => setUrl(e.target.value)}
+              value={formData.url}
+              onChange={handleChange}
               required
             />
           </div>
           <div className="space-y-2">
             <Label htmlFor="category">Category</Label>
-            <Select value={category} onValueChange={setCategory} required>
+            <Select value={formData.category} onValueChange={(value) => setFormData(prevState => ({ ...prevState, category: value }))} required>
               <SelectTrigger>
                 <SelectValue placeholder="Select a category" />
               </SelectTrigger>
