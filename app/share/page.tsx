@@ -7,13 +7,6 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import axios from 'axios'
 
-interface ResourcesProps {
-  title: string;
-  description: string;
-  url: string;
-  category: string;
-}
-
 export default function Component() {
   const [formData, setFormData] = useState({
     title: '',
@@ -21,8 +14,11 @@ export default function Component() {
     url: '',
     category: ''
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitMessage, setSubmitMessage] = useState('')
+  const [submitError, setSubmitError] = useState('')
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
@@ -32,8 +28,25 @@ export default function Component() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData)
-    // Submit the form data to your API or database
+    setIsSubmitting(true)
+    setSubmitMessage('')
+    setSubmitError('')
+    
+    try {
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/resources`, formData);
+      setSubmitMessage('Resource submitted successfully!')
+      setFormData({ title: '', description: '', url: '', category: '' })
+      console.log(response.data);
+      alert("done")
+    } catch (error) {
+      if (axios.isAxiosError(error) && error.response) {
+        setSubmitError(error.response.data.msg || 'Error submitting resource. Please try again.')
+      } else {
+        setSubmitError('An unexpected error occurred. Please try again.')
+      }
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -84,7 +97,12 @@ export default function Component() {
           </div>
           <div className="space-y-2">
             <Label htmlFor="category">Category</Label>
-            <Select value={formData.category} onValueChange={(value) => setFormData(prevState => ({ ...prevState, category: value }))} required>
+            <Select 
+              name="category" 
+              value={formData.category} 
+              onValueChange={(value) => setFormData(prevState => ({ ...prevState, category: value }))} 
+              required
+            >
               <SelectTrigger>
                 <SelectValue placeholder="Select a category" />
               </SelectTrigger>
@@ -100,7 +118,11 @@ export default function Component() {
             </Select>
           </div>
         </div>
-        <Button type="submit" className="w-full">Submit Resource</Button>
+        {submitMessage && <p className="text-center text-green-500">{submitMessage}</p>}
+        {submitError && <p className="text-center text-red-500">{submitError}</p>}
+        <Button type="submit" className="w-full" disabled={isSubmitting}>
+          {isSubmitting ? 'Submitting...' : 'Submit Resource'}
+        </Button>
       </form>
     </>
   )
