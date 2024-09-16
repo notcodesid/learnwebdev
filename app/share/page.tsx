@@ -37,7 +37,6 @@ export default function Component() {
       setSubmitMessage('Resource submitted successfully!')
       setFormData({ title: '', description: '', url: '', category: '' })
       console.log(response.data);
-      alert("done")
     } catch (error) {
       if (axios.isAxiosError(error) && error.response) {
         setSubmitError(error.response.data.msg || 'Error submitting resource. Please try again.')
