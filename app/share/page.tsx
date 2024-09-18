@@ -33,7 +33,7 @@ export default function Component() {
     setSubmitError('')
     
     try {
-      const response = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/resources`, formData);
+      const response = await axios.post('https://learnwebdev.vercel.app/api/resources', formData);
       setSubmitMessage('Resource submitted successfully!')
       setFormData({ title: '', description: '', url: '', category: '' })
       console.log(response.data);
