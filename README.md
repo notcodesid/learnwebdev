@@ -30,3 +30,9 @@ Experience the course roadmap: [Zero to Full-Stack Hero](https://learnwebdev.ver
 - Aims to help learners earn their first tech salary
 - Provides a foundation for further specialized learning
 
+## Contributing
+
+We welcome contributions from everyone. Please read our [contributing guide](./CONTRIBUTING.md) to get started.
+
+
+
