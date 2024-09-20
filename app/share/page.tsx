@@ -25,7 +25,6 @@ export default function Component() {
       [name]: value
     }))
   }
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true)
@@ -39,8 +38,10 @@ export default function Component() {
       console.log(response.data);
     } catch (error) {
       if (axios.isAxiosError(error) && error.response) {
+        console.error('Error response:', error.response);
         setSubmitError(error.response.data.msg || 'Error submitting resource. Please try again.')
       } else {
+        console.error('Unexpected error:', error);
         setSubmitError('An unexpected error occurred. Please try again.')
       }
     } finally {
