@@ -5,7 +5,7 @@ import { ImageEffect } from "@/components/LandingPage_Com/ImageEffect";
 import { MarqueeDemo } from "@/components/LandingPage_Com/MarqueeDemo";
 import { Navbar } from "@/components/LandingPage_Com/navbar";
 
-export default function() {
+export default function Home() {
   return (
     <>
     <Navbar />
