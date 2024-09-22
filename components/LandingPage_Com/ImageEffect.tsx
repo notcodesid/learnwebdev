@@ -4,7 +4,7 @@ import { BorderBeam } from "../magicui/border-beam";
 
 export function ImageEffect() {
     return ( 
-        <div className="w-screen h-screen flex justify-center items-center">
+        <div className="w-screen p-5 h-[300px] md:h-screen flex justify-center items-center">
         <span>
           <Image
           src={EffectImg}
