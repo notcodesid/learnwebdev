@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
     return (
-        <div className="max-w-3xl mx-auto px-4 pt-20 md:pt-28 text-center">
+        <div className="max-w-3xl mx-auto px-4 pt-20 md:pt-28 text-center mb-10">
             <AnimatedShinyTextDemo />
             <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 mt-6">
                 Zero to Full-Stack Hero:

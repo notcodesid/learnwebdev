@@ -7,13 +7,13 @@ const reviews = [
     name: "Rx",
     username: "@shashivadan99",
     body: "This is awesome. I just recommended to friends and juniors",
-    img: "https://pbs.twimg.com/profile_images/1823049781071015936/DQCt1rWR_400x400.jpg",
+    img: "https://pbs.twimg.com/profile_images/1846218315615948802/SrU15SG5_400x400.jpg",
   },
   {
     name: "Bhavneet Singh",
     username: "@Bhavnee66254975",
     body: "Definitely will be following along !",
-    img: "https://pbs.twimg.com/profile_images/1832636665686601728/HbRx1JwG_400x400.jpg",
+    img: "https://pbs.twimg.com/profile_images/1855691870430511104/UkHDwmx7_400x400.jpg",
   },
   {
     name: "Prafful Sharma",
@@ -25,7 +25,7 @@ const reviews = [
     name: "Abhay",
     username: "@Abhay_devv",
     body: "It's really helpful 😇",
-    img: "https://pbs.twimg.com/profile_images/1830476470101147648/ICJOtCks_400x400.jpg",
+    img: "https://pbs.twimg.com/profile_images/1848054581869096960/dhdItN5i_400x400.jpg",
   },
   {
     name: "nilaa laishram🎃",
@@ -33,18 +33,7 @@ const reviews = [
     body: "this is really a great work. keep it up man",
     img: "https://pbs.twimg.com/profile_images/1822673085717221377/4NVrn3ky_400x400.jpg",
   },
-  {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://pbs.twimg.com/profile_images/1823049781071015936/DQCt1rWR_400x400.jpg",
-  },
-  {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://pbs.twimg.com/profile_images/1823049781071015936/DQCt1rWR_400x400.jpg",
-  },  {
+    {
     name: "Sagar Singh",
     username: "@_SagarSingh___",
     body: "Great initiative bro , keep rocking 🔥",
