@@ -31,7 +31,7 @@ export default function HeroSection() {
             </div>
 
             <div>
-                <Link href="/home">
+                <Link href="/full-stack">
                 <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white mt-10 group">
                     Getting Start
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
