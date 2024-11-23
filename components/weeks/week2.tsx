@@ -1,3 +1,5 @@
+import { CircleDot } from "lucide-react";
+
 export default function Week2() {
     const introCSS = [
       { text: "Why do we need CSS?", url: "https://www.youtube.com/watch?v=AP3_V7KXHs4&t=50s" },
@@ -33,7 +35,7 @@ export default function Week2() {
                     href={step.url}
                     className="flex items-center py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 group"
                   >
-                    <span className="mr-2 text-gray-400 group-hover:text-gray-600">👉</span>
+                    <span className="mr-2"><CircleDot className="w-4 h-4 text-orange-500" /></span>
                     <span className="text-gray-600 group-hover:text-gray-900">{step.text}</span>
                   </a>
                 </li>
@@ -50,7 +52,7 @@ export default function Week2() {
                     href={step.url}
                     className="flex items-center py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 group"
                   >
-                    <span className="mr-2 text-gray-400 group-hover:text-gray-600">👉</span>
+                    <span className="mr-2"><CircleDot className="w-4 h-4 text-orange-500" /></span>
                     <span className="text-gray-600 group-hover:text-gray-900">{step.text}</span>
                   </a>
                 </li>
@@ -66,7 +68,7 @@ export default function Week2() {
                     href={step.url}
                     className="flex items-center py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 group"
                   >
-                    <span className="mr-2 text-gray-400 group-hover:text-gray-600">👉</span>
+                    <span className="mr-2"><CircleDot className="w-4 h-4 text-orange-500" /></span>
                     <span className="text-gray-600 group-hover:text-gray-900">{step.text}</span>
                   </a>
                 </li>

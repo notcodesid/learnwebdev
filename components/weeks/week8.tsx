@@ -1,3 +1,5 @@
+import { CircleDot } from "lucide-react";
+
 export default function Week8() {
     const Server = [
       { text: "Creating First Server with Express", url: "https://www.youtube.com/watch?v=N2-FyBBxOZA" },
@@ -27,7 +29,7 @@ export default function Week8() {
                     href={step.url}
                     className="flex items-center py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 group"
                   >
-                    <span className="mr-2 text-gray-400 group-hover:text-gray-600">👉</span>
+                   <span className="mr-2"><CircleDot className="w-4 h-4 text-orange-500" /></span>
                     <span className="text-gray-600 group-hover:text-gray-900">{step.text}</span>
                   </a>
                 </li>
@@ -43,7 +45,7 @@ export default function Week8() {
                     href={step.url}
                     className="flex items-center py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 group"
                   >
-                    <span className="mr-2 text-gray-400 group-hover:text-gray-600">👉</span>
+                  <span className="mr-2"><CircleDot className="w-4 h-4 text-orange-500" /></span>
                     <span className="text-gray-600 group-hover:text-gray-900">{step.text}</span>
                   </a>
                 </li>
