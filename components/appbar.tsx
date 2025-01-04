@@ -1,6 +1,12 @@
 import Image from "next/image"
 import profie from "@/public/x-pfp.png"
 import Link from "next/link"
+import {
+    SignInButton,
+    SignedIn,
+    SignedOut,
+    UserButton
+  } from '@clerk/nextjs'
 
 export default function Appbar() {
     return (
@@ -10,12 +16,15 @@ export default function Appbar() {
             </Link>
             <div className="flex items-center gap-4">
                 <span className="text-sm text-muted-foreground">
-                    Curated with love by
+                Joined with heart by
                 </span>
                  <span>
-                    <Link href={"https://x.com/notcodesid"}>
-                    <Image className="rounded-full" src={profie} alt="x-pfp" height={50}  width={50}/>
-                    </Link>
+                 <SignedOut>
+          <SignInButton />
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
                  </span>
             </div>
         </header>
