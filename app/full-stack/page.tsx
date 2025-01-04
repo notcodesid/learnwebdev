@@ -10,12 +10,13 @@ import Week9 from "@/components/weeks/week9";
 import Week10 from "@/components/weeks/week10";
 import Week11 from "@/components/weeks/week11";
 import { SessionProvider } from "next-auth/react"
+import Appbar from "@/components/appbar";
 
 
 export default function home() {
   return (
     <>
-    
+    <Appbar />
     <Week1 />
     <Week2 />
     <Week3 />
