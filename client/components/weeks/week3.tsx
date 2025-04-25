@@ -1,4 +1,4 @@
-import { CircleDot } from "lucide-react";
+
 
 export default function Week3() {
     const intermediateProject = [
@@ -28,7 +28,7 @@ export default function Week3() {
                     href={step.url}
                     className="flex items-center py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 group"
                   >
-                <span className="mr-2"><CircleDot className="w-4 h-4 text-orange-500" /></span>
+<span className="mr-2"> 👉🏻 </span>
                     <span className="text-gray-600 group-hover:text-gray-900">{step.text}</span>
                   </a>
                 </li>
@@ -44,7 +44,7 @@ export default function Week3() {
                     href={step.url}
                     className="flex items-center py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 group"
                   >
-                   <span className="mr-2"><CircleDot className="w-4 h-4 text-orange-500" /></span>
+<span className="mr-2"> 👉🏻 </span>
                     <span className="text-gray-600 group-hover:text-gray-900">{step.text}</span>
                   </a>
                 </li>
