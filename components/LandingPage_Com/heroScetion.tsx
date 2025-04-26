@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function HeroSection() {
     return (
         <div className="max-w-3xl mx-auto px-4 pt-20 md:pt-28 mb-10">
-        <div className="text-lg font-medium text-orange-500">100 % Free • 9 Weeks</div>
+        <div className="text-lg font-medium text-orange-500">100 % Free • 11 Weeks</div>
             <h1 className="text-3xl md:text-4xl font-bold  mb-6 mt-6">Web development For Beginners: Everthing You Need in One Place</h1>
             <div className="space-y-6 text-gray-600">
                 <p className="">
